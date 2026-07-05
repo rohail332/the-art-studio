@@ -1398,6 +1398,7 @@ footer p {
 @media screen and (max-width: 900px) {
   #hero-section {
     padding: 0 1rem;
+    height: auto !important;
   }
 
   .box {
@@ -1712,10 +1713,3 @@ footer p {
   }
 }
 
-/* try */
-@media only screen and (min-width: 768px) and (max-width: 1000px) {
-
-  #hero-section {
-    height: auto;
-  }
-}
