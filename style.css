@@ -1078,6 +1078,11 @@ footer p {
   margin-bottom: 1.3rem;
 }
 
+
+.sss {
+  margin-top: 3rem;
+}
+
 .hasa {
   background: var(--gradient-color);
   -webkit-background-clip: text;
@@ -1704,5 +1709,13 @@ footer p {
 
   .footer-text p {
     margin-right: 0;
+  }
+}
+
+/* try */
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+
+  #hero-section {
+    height: auto;
   }
 }
