@@ -186,6 +186,13 @@ nav {
   transform: translateY(0);
 }
 
+.hero-btn {
+  display: flex;
+  margin-top: 1rem;
+  gap: 15px;
+  justify-content: flex-start;
+
+}
 
 .btn-hero {
   border: none;
@@ -194,16 +201,14 @@ nav {
   cursor: pointer;
   padding: 0.8rem 1.7rem;
   border-radius: 30px;
-  margin: 1.5rem 1rem 0 0;
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.2s ease;
 }
 
-.normal {
+.new {
   border: 1px solid var(--g-color);
   background: transparent;
-  margin-top: 1rem;
   color: #fff;
   cursor: pointer;
   padding: 0.8rem 1.7rem;
@@ -213,12 +218,12 @@ nav {
   transition: all 0.3s ease;
 }
 
-.normal:hover,
+.new:hover,
 .btn-hero:hover {
   transform: scale(1.04);
 }
 
-.normal:hover {
+.new:hover {
   background: rgba(139, 92, 246, 0.12);
   border-color: #8b5cf6;
 }
@@ -635,8 +640,11 @@ nav {
 }
 
 .conttt-btn {
-  margin-top: 0.3rem;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.2rem auto 0;
 }
 
 .hero {
@@ -644,9 +652,8 @@ nav {
   background: var(--gradient-color);
   color: #fff;
   cursor: pointer;
-  padding: 0.9rem 1.6rem;
+  padding: 0.8rem 2rem;
   border-radius: 30px;
-  margin: 1.5rem 1rem 0 0;
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.2s ease;
@@ -659,10 +666,9 @@ nav {
 .rmal {
   border: 1px solid var(--g-color);
   background: transparent;
-  margin-top: 1rem;
   color: #fff;
   cursor: pointer;
-  padding: 0.9rem 1.6rem;
+  padding: 0.8rem 2rem;
   border-radius: 30px;
   font-size: 1rem;
   font-weight: 600;
@@ -817,6 +823,33 @@ footer p {
   color: #10b981;
   font-size: 0.8rem;
 }
+
+.saaa-btn {
+  border: none;
+  background: var(--gradient-color);
+  color: #fff;
+  padding: 0.8rem 7rem;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.2s ease;
+}
+
+.saaa-btn i {
+  margin-left: 0.6rem;
+  text-align: center;
+  margin-top: 0.1rem;
+  font-size: 0.88rem;
+  transition: margin-left 0.1s ease;
+}
+
+
+
+
+
 
 .btn-lll {
   border: none;
@@ -1066,9 +1099,6 @@ footer p {
   color: var(--text-color);
 }
 
-.more-big {
-  padding: 1rem 4rem;
-}
 
 .line {
   line-height: 1.8;
@@ -1622,17 +1652,21 @@ footer p {
   .hero-btn {
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
     justify-content: center;
     align-items: center;
-        margin-left: 0.8rem ;
+
   }
-  .btn-hero{
-padding: 0.8rem 5rem ;
-  } 
-  .normal{
-    padding: 0.8rem 5rem ;
- 
-  } 
+
+  .btn-hero {
+    padding: 0.8rem 5rem;
+  }
+
+  .new {
+    padding: 0.8rem 5rem;
+    margin-top: 0.6rem;
+
+  }
 
   .conttt-btn {
     display: flex;
@@ -1640,13 +1674,14 @@ padding: 0.8rem 5rem ;
     justify-content: center;
     align-items: center;
   }
-  .rmal{
-    padding: 0.7rem 5.6rem ;
+
+  .rmal {
+    padding: 0.7rem 5.6rem;
   }
 
   .hero {
     margin: 14px 0 0 0;
-        padding: 0.8rem 4rem ;
+    padding: 0.8rem 4rem;
 
   }
 
@@ -1693,16 +1728,16 @@ padding: 0.8rem 5rem ;
     margin-top: 7rem;
   }
 
-  .normal {
-    margin-left: -15px;
-  }
-
-
   .count {
     gap: 3rem;
     font-size: 1.2rem;
     flex-direction: column;
     padding: 3rem 1rem;
+  }
+
+  .saaa-btn {
+    padding: 0.8rem 5rem;
+    margin-top: 0.1rem;
   }
 
   .services-text p,
@@ -1733,8 +1768,41 @@ padding: 0.8rem 5rem ;
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 380px) {
+@media screen and (min-width: 0px) and (max-width: 400px) {
   .nea {
     margin-left: -31px;
+  }
+
+  .hero-btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conttt-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem auto 0;
+    gap: 1.2rem;
+  }
+
+  .rmal {
+    padding: 0.7rem 4rem;
+  }
+
+  .hero {
+    margin: 14px 0 0 0;
+    padding: 0.8rem 2.2rem;
+
+  }
+
+  .saaa-btn {
+    padding: 0.8rem 3.8rem;
+    margin-top: 1rem
   }
 }
