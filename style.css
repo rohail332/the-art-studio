@@ -85,6 +85,12 @@ nav {
   -webkit-background-clip: text;
 }
 
+.nav-links li a:active {
+  background: var(--gradient-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .nav-btn {
   display: inline-flex;
   align-items: center;
@@ -106,7 +112,6 @@ nav {
 }
 
 #hero-section {
-  max-height: 70vh;
   margin-top: 8rem;
   color: var(--text-color);
 }
@@ -119,6 +124,11 @@ nav {
   color: #6ee7b7;
   margin-left: 4.7rem;
   font-size: 0.9rem;
+
+}
+
+.nea {
+  margin-bottom: -3px;
 }
 
 .green {
@@ -175,6 +185,7 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 .btn-hero {
   border: none;
@@ -625,6 +636,7 @@ nav {
 
 .conttt-btn {
   margin-top: 0.3rem;
+
 }
 
 .hero {
@@ -1398,7 +1410,7 @@ footer p {
 @media screen and (max-width: 900px) {
   #hero-section {
     padding: 0 1rem;
-   
+
   }
 
   .box {
@@ -1538,23 +1550,7 @@ footer p {
     font-size: 1rem;
   }
 
-  .hero-btn,
-  .conttt-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
 
-  .btn-hero,
-  .normal,
-  .hero,
-  .rmal,
-  .ser-btn {
-    width: 100%;
-    max-width: 320px;
-    justify-content: center;
-  }
 
   .count {
     padding: 2rem 1rem;
@@ -1619,8 +1615,39 @@ footer p {
   }
 
   .sp {
-    margin: 0 3rem 0.8rem;
     font-size: 0.7rem;
+
+  }
+
+  .hero-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        margin-left: 0.8rem ;
+  }
+  .btn-hero{
+padding: 0.8rem 5rem ;
+  } 
+  .normal{
+    padding: 0.8rem 5rem ;
+ 
+  } 
+
+  .conttt-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rmal{
+    padding: 0.7rem 5.6rem ;
+  }
+
+  .hero {
+    margin: 14px 0 0 0;
+        padding: 0.8rem 4rem ;
+
   }
 
   .text-hero h1 {
@@ -1661,9 +1688,6 @@ footer p {
     height: 310px;
   }
 
-  .hero-btn {
-    padding: 0.75rem 3rem;
-  }
 
   #hero-section {
     margin-top: 7rem;
@@ -1671,12 +1695,8 @@ footer p {
 
   .normal {
     margin-left: -15px;
-    padding: 0.9rem 3rem;
   }
 
-  .btn-hero {
-    padding: 0.9rem 3rem;
-  }
 
   .count {
     gap: 3rem;
@@ -1713,3 +1733,8 @@ footer p {
   }
 }
 
+@media screen and (min-width: 0px) and (max-width: 380px) {
+  .nea {
+    margin-left: -31px;
+  }
+}
