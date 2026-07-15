@@ -1,19 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TheArtStudio</title>
-  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="pages.css">
 </head>
 
 <body>
   <header>
     <nav>
       <div class="logo">TheArtStudio</div>
-      <ul>
+      <div class="menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="Portfolio.html">Portfolio</a></li>
@@ -22,10 +29,338 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-btn">
-        <button class="navbar-btn" onclick="location.href='contact.html'">Get a Quote</button>
+        <button class="navbar-btn" onclick="location.href = 'contact.html'">
+          Get a Quote
+        </button>
       </div>
     </nav>
   </header>
+  <main>
+    <!-- hero section -->
+    <section class="hero-section reveal">
+      <div class="hero-con">
+        <div class="left-side-con">
+          <span class="project-span"><small>🟢</small> Available for new projects</span>
+          <h1 class="hero-heading">
+            Designs That <span class="change">Speak</span> For Your Brand
+          </h1>
+          <p class="hero-para">
+            We design bespoke digital experiences that captivate your audience
+            and elevate your brand identity.
+          </p>
+          <div class="hero-section-btn">
+            <button class="hero-btn-top" onclick="location.href = 'services.html'">
+              Explore Services
+            </button>
+            <button class="hero-btn-bot" onclick="location.href = 'Portfolio.html'">
+              View Our Work
+            </button>
+          </div>
+        </div>
+        <div class="right-side">
+          <img class="hero-img" src="img/n.jpg" alt="hero-section-img" />
+        </div>
+      </div>
+    </section>
+    <!-- counter section -->
+    <section class="counter reveal">
+      <div class="main-counter-div">
+        <div class="count">
+          <h1 class="value" data-val="500" data-suffix="+">500+</h1>
+          <p class="count-text">Projects Done</p>
+        </div>
+        <div class="count">
+          <h1 class="value" data-val="200" data-suffix="+">200+</h1>
+          <p class="count-text">Happy Clients</p>
+        </div>
+        <div class="count">
+          <h1 class="value" data-val="5" data-suffix="+">5+</h1>
+          <p class="count-text">Years Experience</p>
+        </div>
+        <div class="count">
+          <h1 class="value" data-val="100" data-suffix="%">100%</h1>
+          <p class="count-text">Satisfaction Rate</p>
+        </div>
+      </div>
+    </section>
+    <!-- Services section -->
+    <section id="Services" class="reveal">
+      <div class="heading">
+        <span>What We Offer</span>
+        <h1>Our Creative Services</h1>
+        <p>Professional design solutions tailored for every business need</p>
+      </div>
+      <div class="services-main-div">
+        <div class="services-inner-div">
+          <i class="fa-solid fa-pen-nib add"></i>
+          <h1>Logo Design</h1>
+          <p>
+            Unique, memorable logos that define your brand identity across all
+            platforms.
+          </p>
+        </div>
+        <div class="services-inner-div">
+          <i class="fa-solid fa-image add"></i>
+          <h1>Thumbnail Design</h1>
+          <p>
+            Eye-catching YouTube &amp; social media thumbnails that boost your
+            click-through rate.
+          </p>
+        </div>
+        <div class="services-inner-div">
+          <i class="fa-solid fa-vector-square add"></i>
+          <h1>Vector Tracing</h1>
+          <p>
+            High-quality vector conversion from any raster image — scalable to
+            any size.
+          </p>
+        </div>
+        <div class="services-inner-div">
+          <i class="fa-solid fa-rectangle-ad add"></i>
+          <h1>Banner &amp; Poster</h1>
+          <p>
+            Stunning banners and posters designed for events, ads, and
+            promotions.
+          </p>
+        </div>
+        <div class="services-inner-div">
+          <i class="fa-solid fa-file-invoice add"></i>
+          <h1>Flyer Design</h1>
+          <p>
+            Print-ready and digital flyers that communicate your message
+            clearly and creatively.
+          </p>
+        </div>
+        <div class="services-inner-div">
+          <i class="fa-brands fa-instagram add"></i>
+          <h1>Social Media Posts</h1>
+          <p>
+            Branded, scroll-stopping content for Instagram, Facebook, Twitter
+            and LinkedIn.
+          </p>
+        </div>
+      </div>
+      <div class="services-btn-div">
+        <button onclick="location.href = 'services.html'" class="services-btn">
+          View All Services <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- portfolio section -->
+    <section id="portfolio" class="reveal">
+      <div class="heading">
+        <span>Our Work</span>
+        <h1>Portfolio Showcase</h1>
+        <p>A glimpse of the designs we've crafted for our clients.</p>
+      </div>
+      <div class="portfolio-main-div">
+        <div class="portfolio-inner-div">
+          <img class="portfolio-img" src="img/asa.jpg" alt="Event poster" loading="lazy" />
+          <div class="portfolio-text">
+            <span class="portfolio-span-tag">Poster</span>
+            <h4>Music Event Poster</h4>
+            <p>Bold print-ready poster for a live music night</p>
+          </div>
+        </div>
+        <div class="portfolio-inner-div">
+          <img class="portfolio-img" src="img/homem.jpg" alt="Vector character art" loading="lazy" />
+          <div class="portfolio-text">
+            <span class="portfolio-span-tag">Vector Art</span>
+            <h4>Character Illustration</h4>
+            <p>Custom vector portrait with detailed line work</p>
+          </div>
+        </div>
+        <div class="portfolio-inner-div">
+          <img class="portfolio-img" src="img/OFAAX40.jpg" alt="Logo design" loading="lazy" />
+          <div class="portfolio-text">
+            <span class="portfolio-span-tag">Logo</span>
+            <h4>Brand Identity Design</h4>
+            <p>Minimal logo crafted for a modern startup</p>
+          </div>
+        </div>
+        <div class="portfolio-inner-div">
+          <img class="portfolio-img" src="img/ssz.jpg" alt="Social media post" loading="lazy" />
+          <div class="portfolio-text">
+            <span class="portfolio-span-tag">Social Media</span>
+            <h4>Instagram Campaign</h4>
+            <p>Scroll-stopping post series for a fashion brand</p>
+          </div>
+        </div>
+        <div class="portfolio-inner-div">
+          <img class="portfolio-img" src="img/asaA.jpg" alt="Vector tracing" loading="lazy" />
+          <div class="portfolio-text">
+            <span class="portfolio-span-tag">Vector Tracing</span>
+            <h4>Photo to Vector</h4>
+            <p>Clean scalable conversion from raster to vector</p>
+          </div>
+        </div>
+        <div class="portfolio-inner-div">
+          <img class="portfolio-img" src="img/bn.png" alt="Gaming thumbnail" loading="lazy" />
+          <div class="portfolio-text">
+            <span class="portfolio-span-tag">Thumbnail</span>
+            <h4>Channel Thumbnail</h4>
+            <p>Vibrant visuals boosting CTR for a gaming creator</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-btn-div">
+        <button onclick="location.href = 'Portfolio.html'" class="portfolio-btn">
+          View Full Portfolio <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Testimonials section -->
+    <section id="Testimonials" class="reveal">
+      <div class="heading">
+        <span>Testimonials</span>
+        <h1>What Clients Say</h1>
+        <p>
+          Real words from the people we've had the pleasure of working with.
+        </p>
+      </div>
+      <div class="Testimonials-main-div">
+        <div class="Testimonials-inner-div">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            "The Art Studio completely transformed our brand. The logo they
+            designed is iconic — our customers recognize us instantly."
+          </p>
+          <div class="client">
+            <img src="img/pers.jpg" alt="Thomas Xavier" loading="lazy" />
+            <div class="name-text">
+              <h4>Thomas Xavier</h4>
+              <p>CEO, NovaTech</p>
+            </div>
+          </div>
+        </div>
+        <div class="Testimonials-inner-div">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            "Our YouTube CTR doubled after switching to The Art Studio
+            thumbnails. Insane quality, fast turnaround and super
+            professional."
+          </p>
+          <div class="client">
+            <img src="img/doctor1.jpg" alt="Dr. Ali Raza" loading="lazy" />
+            <div class="name-text">
+              <h4>Dr. Ali Raza</h4>
+              <p>YouTuber, 1.2M Subs</p>
+            </div>
+          </div>
+        </div>
+        <div class="Testimonials-inner-div">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+              class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>
+            "The social media pack they made for us gets consistent
+            compliments. Our engagement went through the roof. Highly
+            recommend!"
+          </p>
+          <div class="client">
+            <img src="img/sheh.png" alt="Mia Fontaine" loading="lazy" />
+            <div class="name-text">
+              <h4>Mia Fontaine</h4>
+              <p>Marketing Lead, Bloom Co.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- last section -->
+    <section class="letter-section reveal">
+      <div class="letter-section-div">
+        <h1>
+          Ready to Elevate <br />
+          Your <span class="change">Brand?</span>
+        </h1>
+        <p>Let's build something amazing together. Get a free quote today.</p>
+        <div class="letter-section-btn">
+          <button onclick="location.href = 'contact.html'" class="letter-btn-style">
+            Start Your Project <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button onclick="location.href = 'Pricing.html'" class="letter-btn-normal">
+            View Pricing
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- footer -->
+  <footer class="reveal">
+    <div class="footer">
+      <div class="footer-text">
+        <h1 class="logo-text">TheArtStudio</h1>
+        <p>
+          We create designs that captivate, convert, and leave a lasting
+          impression on your audience.
+        </p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <div class="links">
+        <div class="Pages">
+          <h1>Pages</h1>
+          <ul class="footer-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sers">
+          <h1>Services</h1>
+          <ul class="footer-ul">
+            <li><a href="services.html">Logo Design</a></li>
+            <li><a href="services.html">Thumbnails</a></li>
+            <li><a href="services.html">Vector Tracing</a></li>
+            <li><a href="services.html">Banners & Posters</a></li>
+            <li><a href="services.html">Social Media</a></li>
+          </ul>
+        </div>
+        <div class="Contact">
+          <h1>Contact</h1>
+          <ul class="footer-ul">
+            <li>
+              <a href="mailto:rohailtahir332@gmail.com">hello@pixelcraft.studio</a>
+            </li>
+            <li>
+              <a href="http://github.com/rohail332" target="_blank">Fiverr Profile</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/muhammad-rohail-3457432b4/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <a href="http://github.com/rohail332" target="_blank">Upwork Profile</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="hr-con">
+      <p class="footer-p">&copy; 2026 ArtStudio. All rights reserved.</p>
+      <p class="footer-roo">
+        Made with 💚 by
+        <a href="http://github.com/rohail332" target="_blank">Rohail</a>
+      </p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>

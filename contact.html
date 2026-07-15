@@ -5,137 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - TheArtStudio</title>
-    <link rel="shortcut icon" href="img/graphic-designer.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="pages.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a href="index.html" class="logo-text">ArtStudio</a>
+            <div class="logo">TheArtStudio</div>
+            <div class="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <ul class="nav-links">
+            <ul class="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="Portfolio.html">Portfolio</a></li>
                 <li><a href="Pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button onclick="location.href='contact.html'" class="nav-btn">Get a Quote</button>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-btn">
+                <button class="navbar-btn" onclick="location.href = 'contact.html'">Get a Quote</button>
             </div>
         </nav>
     </header>
-    <section class="contact-page reveal">
-        <div class="services-text kuch">
-            <span>Get In Touch</span>
-            <h1 class="big-text">Let's Build Something</h1>
-            <p>Ready to start your project? Have a question? We respond to every message within 24 hours.</p>
-        </div>
-        <div class="contact-grid">
- <aside class="contact-sidebar">
-                <div class="sidebar-top">
-                    <span>Need a Quick Reply?</span>
-                    <h3>We’re here to help</h3>
-                    <p>Whether you want a quote, a collaboration, or just a design question, our creative team is ready for you.</p>
-                </div>
-                <div class="contact-details">
-                    <div class="detail-card">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <strong>Call us</strong>
-                            <p>+1 234 567 890</p>
-                        </div>
-                    </div>
-                    <div class="detail-card">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <strong>Email</strong>
-                            <p>hello@pixelcraft.studio</p>
-                        </div>
-                    </div>
-                    <div class="detail-card">
-                        <i class="fa-solid fa-clock"></i>
-                        <div>
-                            <strong>Response Time</strong>
-                            <p> Within 24 hours </p>
-                        </div>
-                    </div>
-                    <div class="detail-card">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <strong>Office</strong>
-                            <p>Lahore, Pakistan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sidebar-note">
-                    <h4>Why choose us?</h4>
-                    <p>Fast turnarounds, polished visuals, and communication you can count on. Let’s turn your idea into a standout design.</p>
-                </div>
-            </aside>
-            <div class="contact-form-card">
-                <div class="form-head">
-                    <h2>Send a Message</h2>
-                    <p>Fill in your details and we'll get back to you ASAP.</p>
-                </div>
-                <form action="" class="contact-form">
-                    <div class="input-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" placeholder="Harry Page" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="harry@example.com" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="service">Service Needed</label>
-                        <select id="service" required>
-                            <option value="" disabled selected>Select a service...</option>
-                            <option>Logo Design</option>
-                            <option>Thumbnail Design</option>
-                            <option>Social Media Posts</option>
-                            <option>Flyer Design</option>
-                            <option>Vector Tracing</option>
-                            <option>Multiple Services</option>
-                            <option>Custom Quote</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label for="budget">Budget Range</label>
-                        <select id="budget" required>
-                            <option value="" disabled selected>Your budget...</option>
-                            <option>Under $50</option>
-                            <option>$50 – $150</option>
-                            <option>$150 – $300</option>
-                            <option>$300 – $500</option>
-                            <option>$500+</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label for="message">Project Details</label>
-                        <textarea rows="5" name="message" id="message"
-                            placeholder="Describe your project — what you need, your style preferences, any references, and your deadline..."></textarea>
-                    </div>
-                    <div class="form-actions">
-                        <button type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-                    </div>
-                </form>
-            </div>
 
-           
-        </div>
-    </section>
+    <main>
+        <section id="contact-page" class="reveal">
+            <div class="heading">
+                <span> Get In Touch </span>
+                <h1>Let's Build Something</h1>
+                <p>Ready to start your project? We respond to every message within 24 hours.</p>
+            </div>
+            <div class="contact-div">
+                <!-- left -->
+                <div class="contact-left">
+                    <div class="info-card-heading">
+                        <span class="about-tag">Need a Quick Reply?</span>
+                        <h2>We're here to help</h2>
+                        <p>Whether you want a quote, a collaboration, or just a design question, our creative team is ready for you.</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>rohailtahir332@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon – Sat, 9am – 6pm PKT</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+92 300 0000000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="contact-right">
+                  <form class="contact-form">
+                      <div class="form-heading">
+                          <h2>Send a Message</h2>
+                          <p>Fill in your details and we'll get back to you ASAP.</p>
+                      </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Your name" />
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="your@email.com" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Service Type</label>
+                                <select>
+                                    <option value="" disabled selected>Select a service</option>
+                                    <option>Logo Design</option>
+                                    <option>Thumbnail Design</option>
+                                    <option>Vector Tracing</option>
+                                    <option>Banner & Poster</option>
+                                    <option>Social Media Graphics</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Budget Range</label>
+                                <select>
+                                    <option value="" disabled selected>Select your budget</option>
+                                    <option>Under $50</option>
+                                    <option>$50 – $100</option>
+                                    <option>$100 – $250</option>
+                                    <option>$250 – $500</option>
+                                    <option>$500+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Project type or inquiry" />
+                            </div>
+                            <div class="form-group">
+                                <label>Deadline</label>
+                                <input type="date" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <div class="contact-btn-div">
+                      <button type="submit" class="contact-submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="reveal">
         <div class="footer">
             <div class="footer-text">
-                <h1 class="logo-text">ArtStudio</h1>
+                <h1 class="logo-text">TheArtStudio</h1>
                 <p>We create designs that captivate, convert, and leave a lasting impression on your audience.</p>
                 <div class="icons">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -171,19 +184,19 @@
                     <ul class="footer-ul">
                         <li><a href="mailto:rohailtahir332@gmail.com">hello@pixelcraft.studio</a></li>
                         <li><a href="http://github.com/rohail332" target="_blank">Fiverr Profile</a></li>
-                        <li><a href="https://www.linkedin.com/in/muhammad-rohail-3457432b4/"
-                                target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.linkedin.com/in/muhammad-rohail-3457432b4/" target="_blank">LinkedIn</a></li>
                         <li><a href="http://github.com/rohail332" target="_blank">Upwork Profile</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <hr>
+        <hr />
         <div class="hr-con">
             <p class="footer-p">&copy; 2026 ArtStudio. All rights reserved.</p>
             <p class="footer-roo">Made with 💚 by <a href="http://github.com/rohail332" target="_blank">Rohail</a></p>
         </div>
     </footer>
+
     <script src="app.js"></script>
 </body>
 

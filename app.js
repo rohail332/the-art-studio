@@ -1,69 +1,15 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const navLinksItems = document.querySelectorAll(".nav-links a");
+const menu = document.querySelector(".menu");
+const navLinks = document.querySelector(".navLinks");
+const navBtn = document.querySelector(".navbar-btn");
 
-if (hamburger && navLinks) {
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    hamburger.classList.toggle("active");
-  });
-}
+menu.addEventListener("click", () => {
+  menu.classList.toggle("close");
+  navLinks.classList.toggle("show");
+  navBtn.classList.toggle("show");
 
-navLinksItems.forEach((link) => {
-  link.addEventListener("click", () => {
-    if (navLinks.classList.contains("active")) {
-      navLinks.classList.remove("active");
-      hamburger.classList.remove("active");
-    }
-  });
+
 });
 
-const filterButtons = document.querySelectorAll(".unknow-links .unknow-btn");
-const portfolioItems = document.querySelectorAll(".box-po .pro-div");
-
-if (filterButtons.length && portfolioItems.length) {
-  const map = { post: "p", art: "v", logo: "l", sms: "s", yt: "t" };
-
-  function showAll() {
-    portfolioItems.forEach((i) => (i.style.display = "block"));
-  }
-
-  function filterBy(key) {
-    const targetClass = map[key];
-    if (!targetClass) return showAll();
-    portfolioItems.forEach((item) => {
-      if (item.classList.contains(targetClass)) item.style.display = "block";
-      else item.style.display = "none";
-    });
-  }
-
-  filterButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      filterButtons.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      if (btn.classList.contains("all")) {
-        showAll();
-        return;
-      }
-
-      const keys = Object.keys(map);
-      for (let k of keys) {
-        if (btn.classList.contains(k)) {
-          filterBy(k);
-          return;
-        }
-      }
-
-      showAll();
-    });
-  });
-
-  showAll();
-  const first =
-    document.querySelector(".unknow-links .unknow-btn.all") || filterButtons[0];
-  if (first) first.classList.add("active");
-}
 
 const revealItems = document.querySelectorAll(".reveal");
 
@@ -75,7 +21,7 @@ if (revealItems.length > 0) {
           entry.target.classList.add("active");
           observer.unobserve(entry.target);
 
-          let count = document.querySelectorAll(".num");
+          let count = document.querySelectorAll(".value");
           let duration = 2000;
           count.forEach((item) => {
             let start = 0;
